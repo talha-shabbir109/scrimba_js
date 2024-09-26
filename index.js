@@ -1,16 +1,10 @@
-let saveEl = document.getElementById("save-el")
-let countEl = document.getElementById("count-el")
-let count = 0
+let name = "Linda"
+let greeting = "Hi there"
 
-function increment() {
-    count += 1
-    countEl.textContent = count
+// Create a function that logs out "Hi there, Linda!" when called
+
+function greetLinda() {
+    console.log(greeting + ", " + name + "!")
 }
 
-function save() {
-    let countStr = count + " - "
-    saveEl.textContent += countStr
-    countEl.textContent = 0
-    count = 0
-}
-
+greetLinda()
