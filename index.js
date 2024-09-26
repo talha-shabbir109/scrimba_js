@@ -1,10 +1,20 @@
-// Create two variables, name and greeting. The name variable should store your name,
-// and the greeting should store e.g. "Hi, my name is "
+// 1. Grab the save-el paragrah and store it in a variable called saveEl
+let saveEl = document.getElementById("save-el")
+let countEl = document.getElementById("count-el")
+let count = 0
 
-// Create a third variable, myGreeting, that contatenates the two strings
-// Log myGreeting to the console
+console.log(saveEl)
 
-let name = "Talha"
-let greeting = "Hi, my name is "
-let myGreeting = greeting + name
-console.log(myGreeting)
+function increment() {
+    count += 1
+    countEl.innerText = count
+}
+
+function save() {
+    let countStr = count + " - "
+    // 2. Create a variable that contains both the count and the dash separator, i.e. "12 - "
+    // 3. Render the variable in the saveEl using innerText
+    saveEl.textContent += countStr
+    // NB: Make sure to not delete the existing content of the paragraph
+    console.log(count)
+}
