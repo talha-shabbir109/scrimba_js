@@ -29,4 +29,4 @@ function multiply() {
     let result = num1 * num2
     sumEl.textContent = "sum: " + result
 }
-
+  
